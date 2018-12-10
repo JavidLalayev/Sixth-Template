@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cavid's Page</title>
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+.mySlides {
+	display:none;
+	transition: background-color 2s ease;
+	animation-name: fade;
+  	animation-duration: 1.5s;
+}
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+</style>
+
+<link rel="shortcut icon" type="image/png" href="static/img/favicon.ico">
+
+<script src="Js/script.js"></script>
+<link rel="stylesheet" type="text/css" href="Css/style.css">
+</head>
+
+
+
+
+<body>
+
+	<div class="arxafonSekli"></div>
+
+	<div class="arxafonQaraltisi"></div>
+
+
+
+
+
+	<div class="main">
+		
+
+		<div class="main1">
+			
+			<center>
+				<div class="main1BasSoz">It is My City</div>
+
+				<div class="main1Ad">Lalayev Javid</div>
+
+			</center>
+
+			<center>
+				<div class="main1-Orta">
+					<div class="main1Sol"></div>
+					<div class="ortadakiSoz">Baku Nights</div>
+					<div class="main1Sag"></div>
+				</div>
+			</center>
+
+
+			<div class="main1Daireler">
+					
+					<div class="main1Daire">
+						
+							<p class="day" id="c-day"></p>
+
+
+							<p class="days">DAYS</p>
+
+					</div>
+
+					<div class="main1Daire1">
+						
+						<p class="day" id="c-hour"></p>
+
+
+						<p class="days">HOURS</p>
+
+					</div>
+
+					<div class="main1Daire1">
+						
+						<p class="day" id="c-minute"></p>
+
+
+						<p class="days">MINUTES</p>
+
+					</div>
+
+					<div class="main1Daire1">
+						
+						<p class="day" id="c-second"></p>
+
+
+						<p class="days">SECONDS</p>
+
+					</div>	
+
+			</div>
+
+
+			<center>
+				<div class="main1-Orta2">
+					<div class="main1Sol2"></div>
+					<div class="ortadakiSoz2">December <span id="c-day2"></span>, 2018, in Baku, Azerbaijan</div>
+					<div class="main1Sag2"></div>
+				</div>
+			</center>
+
+			<center>
+				<i class="main1Asagiox">&#8595</i>
+
+				<div class="main1Button" onclick="seyfeCevir()">Ətraflı</div>
+			</center>
+						
+		</div>
+
+
+
+
+
+
+
+		<div class="main2">
+			
+			<div class="navbar">
+
+				<div class="logo">
+					<img src="img/logo.png">
+				</div>
+
+
+
+				<div class="search">	
+					
+				<label class="main2Input" for = "name">
+					<img src="img/axtaris.png" class="main2-nav-img" >
+				</label>
+					
+					<input id="name" type="text" name="" class="main2-input" placeholder="Search">	
+				</div>
+
+				<div class="navItems">
+					
+					<span class="nav1">ABOUT AZERBAIJAN</span>
+
+					<span class="nav1">DISCOVER</span>
+
+					<span class="nav1">ABOUT US</span>
+
+					<span class="nav1">Events</span>
+
+				</div>
+
+				<div class="main2Button" onclick="seyfeCevir()">Geri</div>	
+			</div>
+				
+
+
+
+			<div class="main2-bir">
+				
+				<img class="mySlides ws3-animate-fading" src="img/1.jpg" width="100%" height="100%">
+
+				<img class="mySlides ws3-animate-fading" src="img/2.jpg" width="100%" height="100%">
+
+				<img class="mySlides ws3-animate-fading" src="img/3.jpg" width="100%" height="100%">
+
+				<img class="mySlides ws3-animate-fading" src="img/4.jpg" width="100%" height="100%">
+
+			</div>
+
+			<script>
+				var myIndex = 0;
+				carousel();
+
+				function carousel() {
+				    var i;
+				    var x = document.getElementsByClassName("mySlides");
+				    for (i = 0; i < x.length; i++) {
+				       x[i].style.display = "none";  
+				    }
+				    myIndex++;
+				    if (myIndex > x.length) {myIndex = 1}    
+				    x[myIndex-1].style.display = "block";  
+				    setTimeout(carousel, 3000); // Change image every 2 seconds
+				}
+			</script>
+
+
+
+
+
+
+
+
+			<div class="main2-iki">
+
+				<div class="main3-xett"></div>
+
+				<p class="main2-iki-header">DISCOVER</p>
+
+				<div class="main2-iki-xett"></div>
+
+				<div class="main2-iki-sekiller">
+					
+					<div class="sekildivi1">
+						
+						<div class="sk-bir">
+							<div class="sk-bir-reng sk-bir-rengs">
+								<h2 class="sekil-sozu">Arts &amp; Culture</h2>
+							</div>
+						</div>
+						
+						
+						<div class="sk-iki">
+							<div class="sk-iki-reng sk-bir-rengs">
+								<h2 class="sekil-sozu">History</h2>
+							</div>
+						</div>
+						
+
+						<div class="sk-uc">
+							<div class="sk-uc-reng sk-bir-rengs">
+								<h2 class="sekil-sozu">Gastronomy</h2>
+							</div>
+						</div>
+						
+					</div>
+
+					<div class="sekildivi1">
+						
+						<div class="sk-dord">
+							<div class="sk-dord-reng sk-bir-rengs">
+								<h2 class="sekil-sozu">Shopping</h2>
+							</div>
+						</div>
+						
+						
+						<div class="sk-bes">
+							<div class="sk-bes-reng sk-bir-rengs">
+								<h2 class="sekil-sozu">Nightlife</h2>
+							</div>
+						</div>
+						
+
+						<div class="sk-alti">
+							<div class="sk-alti-reng sk-bir-rengs">
+								<h2 class="sekil-sozu">Nature</h2>
+							</div>
+						</div>
+						
+					</div>
+
+					<div class="sekildivi1">
+						
+						<div class="sk-yeddi">
+							<div class="sk-yeddi-reng sk-bir-rengs">
+								<h2 class="sekil-sozu">Family Holiday</h2>
+							</div>
+						</div>
+						
+						
+						<div class="sk-sekgiz">
+							<div class="sk-sekgiz-reng sk-bir-rengs">
+								<h2 class="sekil-sozu">Outdoor Activities </h2>
+							</div>
+						</div>
+						
+
+						<div class="sk-doqquz">
+							<div class="sk-doqquz-reng sk-bir-rengs">
+								<h2 class="sekil-sozu">Beach Rest</h2>
+							</div>
+						</div>
+						
+					</div>
+
+
+
+						
+					
+				</div>
+
+
+
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<div class="main2-uc">
+
+				<div class="main3-xett"></div>
+				
+				<div class="main3-content">
+					
+					<div class="main3-content-sol">
+						
+						<p class="main3-header">E-VISA - QUICK AND CONVENIENT</p>
+
+						<p class="main3-soz-content">MORE INFORMATION</p>
+
+					</div>
+
+					<div class="main3-content-sag" onclick="videoOynat()">
+
+						<div class="main3-qaralti onclick">
+								<div class="main3-youtubeDuyme">
+
+									<i  class="main3-fa fa fa-youtube-play" aria-hidden="true"></i>
+								
+								</div>
+
+						</div>
+
+
+						<iframe  class="video" width="100%" height="100%" src="https://www.youtube.com/embed/4Elm0d4hs4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+
+
+
+
+
+			<div class="main2-dord">
+				<div class="main3-xett"></div>
+
+				<p class="main2-dord-header">Interesting facts...</p>
+
+				<div class="main2-iki-xett"></div>
+
+
+
+				<div class="slider">
+					<div class="leftarrow" onclick="sola()"></div>
+
+					<div class="main2-dord-slider">
+					
+
+						<div class="main2-dord-boyukSlider">
+							
+
+
+
+							<div class="main2-dord-slider-bir">
+								
+								<div class="main2-dord-slider-bir-sol c1"></div>
+
+
+
+								<div class="main2-dord-slider-bir-sag">
+									
+									<p class="main2-dord-slider-bir-header">Black Gold</p>
+
+									<p class="main2-dord-slider-bir-content">
+										
+                                     It was in Baku that the first oil well in the world was drilled at sea. By 1901, more than half of the world's oil was produced here.
+                                
+									</p>
+
+								</div>
+
+							</div>
+
+
+							
+
+
+
+
+
+
+
+
+
+
+							<div class="main2-dord-slider-iki">
+								
+								<div class="main2-dord-slider-bir-sol c2"></div>
+
+
+
+								<div class="main2-dord-slider-bir-sag">
+									
+									<p class="main2-dord-slider-bir-header">Nobel prize</p>
+
+									<p class="main2-dord-slider-bir-content">
+										
+                                     
+                                     One of the most famous and respectable international awards - the Nobel Prize - was based on the capital that Alfred Nobel acquired on profits from Baku…                                
+                                
+									</p>
+
+								</div>
+								
+							</div>
+
+							
+
+
+
+
+
+
+
+
+
+
+
+
+							<div class="main2-dord-slider-uc">
+								
+								<div class="main2-dord-slider-bir-sol c3"></div>
+
+
+
+								<div class="main2-dord-slider-bir-sag">
+									
+									<p class="main2-dord-slider-bir-header">
+										Cinematography in Baku
+									</p>
+
+									<p class="main2-dord-slider-bir-content">
+									
+                                      Shooting of films like "Amphibian Man" (1961), "Diamond Arm" (1968), "The World Is Not Enough" - a film about James…                                
+									</p>
+
+								</div>
+								
+							</div>
+
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+							<div class="main2-dord-slider-dord">
+								
+								<div class="main2-dord-slider-bir-sol c4"></div>
+
+
+
+								<div class="main2-dord-slider-bir-sag">
+									
+									<p class="main2-dord-slider-bir-header">The first opera perfomance in the Muslim East</p>
+
+									<p class="main2-dord-slider-bir-content">
+									
+                                     Baku became the first city in the Muslim East, where in 1908 an opera performance was staged - "Leyli and Majnun" by Uzeyir Hajibayli.
+                                
+									</p>
+
+								</div>
+								
+							</div>
+						</div>
+							
+
+					</div>
+
+					<div class="rightarrow" onclick="saga()"></div>
+				
+				</div>
+					
+				
+				
+
+				
+			
+
+
+			</div>
+
+
+
+
+
+			<div class="main2-xerite">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.3086314141233!2d49.846388115319456!3d40.379851865805584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307da78f00bb29%3A0x58adac400e0c11c5!2zMjggTWF5xLFz!5e0!3m2!1str!2s!4v1544421074380" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+
+
+			<div class="main2-bes">
+				
+				<div class="main2-bes-x"></div>
+
+				<div class="main2-bes-ust">
+					
+					<p class="main2-bes-ust-header">Visit our Instagram</p>
+
+					<div class="main2-bes-xett"></div>
+
+					<p class="main2-bes-content">#Takeanotherlook</p>
+
+					<div class="main2-bes-xett2"></div>
+
+				</div>
+
+
+				<div class="main2-bes-alt">
+					
+					<div class="main2-bes-alt-1">
+						<ul>
+							<li class="bir-list-bas">DISCOVER</li>
+							<li class="bir-list">ARTS & CULTURE</li>
+							<li class="bir-list">HISTORY</li>
+							<li class="bir-list">GASTRONOMY</li>
+							<li class="bir-list">SHOPPING</li>
+							<li class="bir-list">NIGHTLIFE</li>
+						</ul>
+					</div>
+
+					<div class="main2-bes-alt-2">
+						<ul class="ul1">
+							<li class="bir-list">NATURE</li>
+							<li class="bir-list">FAMILY HOLIDAY</li>
+							<li class="bir-list">OUTDOOR ACTIVITIES</li>
+							<li class="bir-list">BEACH REST</li>
+						</ul>
+					</div>
+
+					<div class="main2-bes-alt-3">
+						<ul>
+							<li class="bir-list-bas">TRAVEL PLANNING</li>
+							<li class="bir-list">VISA</li>
+							<li class="bir-list">ACCOMMODATION</li>
+							<li class="bir-list">INFODESK</li>
+						</ul>
+					</div>
+
+					<div class="main2-bes-alt-4">
+						<ul class="ul1">
+							<li class="bir-list">HOW TO GET TO BAKU</li>
+							<li class="bir-list">WHEN TO GO</li>
+							<li class="bir-list">FAQ</li>
+						</ul>
+					</div>
+					
+				</div>
+
+			</div>
+
+
+
+			<div class="main2-footer">
+				
+				<span class="main2-footer-sol-1">ABOUT AZERBAIJAN </span>
+				<span class="main2-footer-sol-1" style="margin-left: 20px!important">Contact us</span>
+				<br>
+				<span class="main2-footer-sol-2">© All rights reserved 2018, AzerbaijanTravel</span>
+
+				<i class="fa fa-facebook j"></i>
+				<i class="fa fa-twitter j"></i>
+				<i class="fa fa-google j"></i>
+
+			</div>
+
+
+
+
+		</div>
+	</div>
+		
+
+
+</body>
+
+</html>
